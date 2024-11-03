@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de la Ley de Coulomb</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.6.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">Simulador de la Ley de Coulomb</h1>
+        <div class="controls row mt-4">
+            <div class="col-md-4">
+                <label for="charge1">Carga 1 (q1):</label>
+                <div class="input-group">
+                    <input type="number" class="form-control" id="charge1" value="1">
+                    <div class="input-group-append">
+                        <select class="form-control" id="charge1Unit">
+                            <option value="1">C</option>
+                            <option value="1e-3">mC</option>
+                            <option value="1e-6">µC</option>
+                            <option value="1e-9">nC</option>
+                            <option value="1e-12">pC</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <label for="charge2">Carga 2 (q2):</label>
+                <div class="input-group">
+                    <input type="number" class="form-control" id="charge2" value="1">
+                    <div class="input-group-append">
+                        <select class="form-control" id="charge2Unit">
+                            <option value="1">C</option>
+                            <option value="1e-3">mC</option>
+                            <option value="1e-6">µC</option>
+                            <option value="1e-9">nC</option>
+                            <option value="1e-12">pC</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <label for="distance">Distancia (r):</label>
+                <div class="input-group">
+                    <input type="number" class="form-control" id="distance" value="1">
+                    <div class="input-group-append">
+                        <select class="form-control" id="distanceUnit">
+                            <option value="1">m</option>
+                            <option value="1e-2">cm</option>
+                            <option value="1e-3">mm</option>
+                            <option value="1e-6">µm</option>
+                            <option value="1e-9">nm</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mt-4">
+            <button class="btn btn-primary" onclick="calculateForce()">Calcular Fuerza</button>
+        </div>
+        <div class="result mt-4">
+            <p>Fuerza Electrostatica (F): <span id="force">0</span> N</p>
+        </div>
+        <div class="canvas-container mt-4 overflow-y-auto">
+            <canvas id="canvas" class="border" style="width: 100%; height: auto;"></canvas>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.6.0/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
