@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     function loadContent(selector, url, welcomeMessage = false) {
         document.getElementById('contenido').innerHTML = '<div class="d-flex justify-content-center align-items-center" style="height: 92vh;"><div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;"><span class="visually-hidden">Cargando contenido...</span></div></div>';
-        //document.getElementById('texto-info').style.display = 'none';
+        document.getElementById('texto-info').style.display = 'none';
         setTimeout(function() {
             if (welcomeMessage) {
                 document.getElementById('contenido').innerHTML = '<h1 class="mt-3">Bienvenido</h1>';
@@ -21,6 +21,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     function typeWriter() {
+        document.getElementById('texto-info').style.display = 'block';
         const text = 'Bienvenido al emocionante mundo de la física interactiva con nuestro simulador web de Ley de Coulomb y Campo Eléctrico. Este proyecto tiene como objetivo ofrecer una experiencia educativa inmersiva donde los usuarios pueden explorar y visualizar las fuerzas electrostáticas y los campos eléctricos de una manera dinámica e intuitiva. Utilizando la Ley de Coulomb, que describe la fuerza entre dos cargas eléctricas, y los conceptos fundamentales del campo eléctrico, nuestro simulador permitirá a los usuarios manipular diferentes variables y observar cómo interactúan las cargas en un entorno visualmente atractivo. Ideal para estudiantes, educadores y entusiastas de la física, esta herramienta proporciona una plataforma para profundizar en el entendimiento de la electrostática y sus aplicaciones prácticas en el mundo real. Prepárate para descubrir y aprender a través de la simulación interactiva y el análisis detallado de fenómenos eléctricos.';
         let index = 0;
 
