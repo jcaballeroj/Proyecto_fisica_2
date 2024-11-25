@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function () {
             if (index < text.length) {
                 textParagraph.innerHTML += text.charAt(index); // Añade una letra a la vez
                 index++;
-                setTimeout(write, 30); // Ajusta la velocidad de escritura
+                setTimeout(write, 28); // Ajusta la velocidad de escritura
             }
         }
 
