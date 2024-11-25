@@ -5,7 +5,7 @@
   width: 1rem;
   height: 1rem;
 }
-p{
+p,li{
     font-family: "Itim", cursive;
     font-weight: 400;
     font-style: normal;
