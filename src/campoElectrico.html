@@ -71,7 +71,7 @@
       overflow-x: auto;
       text-align: center;
       white-space: nowrap;
-      -webkit-overflow-scrolling: touch;
+      /*-webkit-overflow-scrolling: touch;*/
     }
 
     .btn-bd-primary {
@@ -237,13 +237,18 @@
                 </div>
                 <div class="modal-body">
                   El campo eléctrico E es una cantidad vectorial que existe en todo punto del espacio. El
-                    campo eléctrico en una posición indica la fuerza que actuaría sobre una carga puntual positiva
-                    unitaria si estuviera en esa posición.
+                  campo eléctrico en una posición indica la fuerza que actuaría sobre una carga puntual positiva
+                  unitaria si estuviera en esa posición.
                   <div class="container img-fluid">
                     <img src="../img/formula_campo_electrico.png" alt="" class="mx-auto d-block">
                   </div>
-                  <p>Las dimensiones del campo eléctrico son newtons/coulomb, 
-                    N/C</p>
+                  Las dimensiones del campo eléctrico son newtons/coulomb N/C.
+                  <br>
+                  Podemos expresar la fuerza eléctrica en términos del campo eléctrico,
+                  <div class="container img-fluid">
+                    <img src="../img/fuerza_campo.png" alt="" class="mx-auto d-block">
+                  </div>
+                 
                 </div>
                 <div class="modal-footer">
                   <button class="btn btn-primary" data-bs-target="#exampleModalToggle4"
@@ -253,10 +258,40 @@
             </div>
           </div>
 
+          <div class="modal fade" id="exampleModalToggle4" aria-hidden="true" aria-labelledby="exampleModalToggleLabel4"
+            tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalToggleLabel4"> <b> Campo eléctrico de una carga
+                      puntual</b> </h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  El campo eléctrico alrededor de una sola carga puntual aislada, <b>Qi</b>, esta dado por
+                  <div class="container img-fluid">
+                    <img src="../img/campo_carga.png" alt="" class="mx-auto d-block">
+                  </div>
+                  La dirección del campo eléctrico apunta hacia afuera para una carga puntual positiva y hacia adentro para una carga puntual negativa
+                  <div class="container img-fluid alin">
+                    <img src="../img/representacion_campo.png" alt="" class="w-75 d-block mx-auto">
+                  </div>
+
+                </div>
+                <div class="modal-footer">
+                  <button class="btn btn-success" data-bs-target="#exampleModalToggle3"
+                    data-bs-toggle="modal">Volver</button>
+                  <button class="btn btn-primary" data-bs-target="#exampleModalToggle5"
+                    data-bs-toggle="modal">Siguiente</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
           <!-- Fin concepto -->
 
 
-
+          <!-- Ejercicios -->
           <div class="col">
             <div class="card shadow-sm">
               <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg"
@@ -266,11 +301,115 @@
                   dy=".3em">Ejercicios</text>
               </svg>
               <div class="card-body">
-                <p class="card-text">Ejercicios de la ley de Coulomb, con estos ejercicios podras empezar a paracticar
+                <p class="card-text">Ejercicios de la ley de Coulomb, con estos ejercicios podras empezar a practicar
                 </p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                    <button class="btn btn-sm btn-outline-secondary" data-bs-target="#exampleModalToggle7"
+                      data-bs-toggle="modal">Ver</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal fade" id="exampleModalToggle7" aria-hidden="true" aria-labelledby="exampleModalToggleLabel7"
+            tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalToggleLabel7"> <b>Ejercicios para practicar</b> </h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <div class="alert alert-success alert-dismissible fade show" role="alert">
+                    <h4 class="alert-heading">Bien hecho!</h4>
+                    <p> Recuerda que puedes utilizar el simulador para que se faciliten la validacion de resultados, he
+                      aqui
+                      unos ejercicios de practica para que puedas vincularte al simulador</p>
+                    <hr>
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                  </div>
+                  <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="flush-headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                          Ejercicio #1
+                        </button>
+                      </h2>
+                      <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                          <p>
+                            Tres cargas electricas puntuales y positivias, se encuentran situadas en los vertices de un
+                            triangulo equilatero de lado &radic;3 m dos de ellas tiene carga Q y la tercera 2Q, siendo Q
+                            = 10<sup>-4</sup>C. Calcular:
+                          <ul>
+                            <li>Campo Electrico en el punto p situado en el origen.</li>
+                          </ul>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="flush-headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                          Ejercicio #2
+                        </button>
+                      </h2>
+                      <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                          <p>
+                            Disponemos de 3 cargas en el vacio q1 = 7 mC, q2 = -3 mC y q3 = 3 mC situadas
+                            respectivamente en los puntos A (-3,0) m, B(0,0) m y C(4,0) m, determinar el campo eléctrico
+                            creado en el punto Z (0,3).
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="flush-headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#flush-collapseThree" aria-expanded="false"
+                          aria-controls="flush-collapseThree">
+                          Ejercicio #3
+                        </button>
+                      </h2>
+                      <div id="flush-collapseThree" class="accordion-collapse collapse"
+                        aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                          <p>
+                            Una carga puntual de 2 µC se encuentra en el punto A(-1,2) y otra de -2 µC se encuentra en
+                            el punto B(2,2). Calcula el vector campo eléctrico total, E, en el origen si los valores de
+                            todas las coordenadas están expresadas en metros.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="flush-headingFour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                          Ejercicio #4
+                        </button>
+                      </h2>
+                      <div id="flush-collapseFour" class="accordion-collapse collapse"
+                        aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                          <p>
+                            Calcular la magnitud de la intensidad del campo eléctrico en el punto medio P entre dos
+                            cargas puntuales cuyos valores son q1 = 9μC y q2 = 4μC , separadas a una distancia de 16cm.
+                          </p>
+                          <div class="container img-fluid">
+                            <img src="../img/ejercicio_campo.png" alt="" class="mx-auto d-block">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
